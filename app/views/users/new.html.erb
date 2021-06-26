@@ -1,0 +1,30 @@
+<div class="mainContent">
+  <div class="grid">
+    <h1 class="largeHeader">Sign up</h1>
+    <p class="centeredDescription col_4">Already signed up? You can <a href="/login">log in here.</a></p>
+    <div class="centered_col">
+		<%= form_for @user do |f|%>
+			<label for="name">Full name</label><br>
+			<input class="shortInput" id="name" type="text"><br>
+
+			<label for="email">Email</label><br>
+			<input class="shortInput" id="email" type="text"><br>
+			<%= f.label :username%><br>
+			<%= f.text_field :username%><br>
+			<%= f.label :password%><br>
+			<%= f.password_field :password%><br>
+			<label for="Phone">Phone</label><br>
+			<input class="shortInput" id="Phone" type="text"><br>
+			<label for="About">About</label><br>
+			<input class="shortInput" id="About" type="text"><br>
+
+			<%= f.submit %>
+		<%end%>
+
+    </div><!-- end centered_col contact form -->
+
+    <div class="centered_col">
+    </div>
+
+  </div><!-- end grid -->
+</div><!-- end mainContent -->
