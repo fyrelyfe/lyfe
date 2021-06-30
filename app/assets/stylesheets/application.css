@@ -13,13 +13,3 @@
  *= require_tree .
  *= require_self
  */
-.grid {
-    text-align: center;
-}
-.new_user input {
-    width: 600px;
-    margin-bottom: 20px;
-}
-.centeritem{
-	text-align:center;
-}
