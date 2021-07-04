@@ -2,7 +2,9 @@
                     Linktree
                     <span class="logo"></span></h1><h2 class="text-center">
                                             Sign up for your Linktree account
-                                    </h2></div><div class="auth__box"><div class="auth__form"><form name="fos_user_registration_form" method="post" action="https://linktr.ee/register" class="fos_user_registration_register" novalidate><label class="active-input" for="fos_user_registration_form_email"><input type="email"
+                                    </h2></div><div class="auth__box"><div class="auth__form">
+									<%= form_for @user do |f|%>
+									<label class="active-input" for="fos_user_registration_form_email"><input type="email"
             class="field is-empty"
             value=""
             autocomplete="fos_user_registration_form_email"
