@@ -14,3 +14,42 @@
  *= require_self
  */
 label.active-input.with-prepend-text input.focus-visible~.prepend-text{opacity:.5;transition:opacity .6s .2s}label.active-input.error{color:#ff1731}label.active-input.error>span{color:#ff1731;border-bottom-color:#ff1731!important}label.active-input.error .field{color:#ff1731}label.active-input.hidden{position:absolute;opacity:0}label.active-input.visible{position:relative;opacity:1;transition:opacity .2s ease-in-out}label.active-input .field.focus-visible+span span,label.active-input .field:not(.is-empty)+span span,label.active-input select.field span span{transform:scale(.68) translateY(-31px);cursor:default}label.active-input .field.focus-visible+span,label.active-input select.field:focus+span{border-bottom-color:#00d775}label.active-input .field{background:transparent;font-weight:300;border:0;color:#282f37;outline:none;cursor:text;display:block;width:100%;line-height:32px;padding-bottom:3px;transition:opacity .2s ease-in-out}label.active-input .field::-webkit-input-placeholder{color:#686d73}label.active-input .field::-moz-placeholder{color:#686d73}label.active-input .field:-ms-input-placeholder{color:#686d73}label.active-input .field.is-empty:not(.focus-visible){opacity:0}
+.hNRNtY {
+    font-size: 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 0px 40px 0px 0px;
+}
+.gvkXHk {
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    height: 64px;
+    padding: 0px 24px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(218, 222, 224);
+    transition: color 0.2s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+}
+.hNRNtY.active::after {
+    background-color: rgb(38, 50, 56);
+}
+.hNRNtY:hover::after, .hNRNtY:focus::after, .hNRNtY.active::after {
+    width: 100%;
+}
+.hNRNtY::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    transition: width 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+}
